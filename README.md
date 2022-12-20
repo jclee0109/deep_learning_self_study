@@ -41,6 +41,10 @@
                 - import matplotlib.pyplot as plt # matplotlib의 pyplot 함수를 plt로 줄여서 보통 사용
                 - scatter(), xlabel(), ylabel(), show() 등의 함수가 있음
                 - 길이, 무게의 feature 두개를 파악해서 linear 한 관계를 유추할 수 있음.
+                - zip() 함수를 사용하면, lengths = [], weights = [] 를 [length, weight] 의 배열 형태로 만들 수 있음
     - KNN(K-Nearest Neighbors)
         1. what?
             - 거리상 가장 가까운 점들을 계산하여, 새로운 데이터가 어떤 종류의 데이터인지 파악할 수 있는 알고리즘
+            - 단점은 k-최근접 이웃 알고리즘은 가장 가까운 직선거리에 대해서 어떤 데이터가 있는지만 살피면 됨! 
+            - 이러한 특징 때문에,  데이터가 아주 많은 경우 사용하기가 힘듬
+                - 데이터가 크기 때문에, 메모리가 많이 필요하고, 계산 시간이 매우 많이 소요됨 (모든 노드에 대해서 분석하기 때문에)
